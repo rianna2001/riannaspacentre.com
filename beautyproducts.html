@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Rianna Spa and Salon Centre</title>
+<title>Beauty</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
@@ -113,7 +113,6 @@ body {
   text-align: center;
   font-family: arial;
   background-color: white;
-  padding: 20px;
 }
 
 .price {
@@ -141,7 +140,7 @@ body {
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 50%;
+  width: 33.33%;
   padding: 5px;
 }
 
@@ -151,18 +150,6 @@ body {
   clear: both;
   display: table;
 }
-.pricelist {
-  position: relative;
-  float: left;
-}
-.video{
-  position: relative;
-  float: right;
-  margin: auto 0px;
-  display: inline-block;
-
-
-}
 
 }
 
@@ -170,16 +157,16 @@ body {
 </head>
 <body>
   <div class="topnav" id="myTopnav">
-  <a href="#home" class="active" >Home</a>
-  <a href="about us.html">About Us</a>
+  <a href="#home" >Home</a>
+  <a href="#aboutus">About Us</a>
   <div class="dropdown">
-    <button class="dropbtn">Products
+    <button class="dropbtn" class="active">Products
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="beautyproducts.html"class="active">Beauty</a>
-      <a href="hairproducts.html">Haircare</a>
-      <a href="skinproducts.html">Skincare</a>
+      <a href="#"class="active">Beauty</a>
+      <a href="#">Haircare</a>
+      <a href="#">Skincare</a>
     </div>
   </div> 
     <div class="dropdown">
@@ -187,9 +174,9 @@ body {
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="makeupservices.html">Makeup</a>
+      <a href="makeup.html">Makeup</a>
       <a href="spa.html">Spa</a>
-      <a href="salonservices.html">Salon</a>
+      <a href="salon1.html">Salon</a>
     </div>
   </div>
   <div class="topnav">
@@ -205,66 +192,98 @@ body {
 </div>
 </div>
 <div class="container">
- <img src="Images/homebann.png" alt="banner"  style="width:100%; height:100%;">
+     <img src="Images/beautybanner.png" alt="banner" style="width:100%; height: 100%;">
+
+</div> 
 </div>
-
-
 <br>
 <br>
 <br>
-<h1 style="text-align:center;color: yellowgreen;"><b><u>Our Most Requested Services</u></b></h1>
+<h3><b><u> Beauty Products</u></b></h3>
 <div class="column">
 <div class="card">
-  <img src="Images/homemakeup.jpg" alt="makeuplook" style="width: 100%">
-  <br>
-  <h3>Makeup </h3>
-  <p style="text-align:left; padding: 2px;">One of our most Popular Services at Rianna Spa and Salon is our Makeup Services. Our Beauty Practitioners are some of the best in the Industry with years of experiences.Satifisation Guarantee!</p>
-  <a href="makeup.html">
-        <button class="btn btn--block card__btn">Visit our page for more info</button>
-      </a>
+  <img src="Images/makeup1.jpg" alt="powder" style="width: 100%">
+  <h3>Sacha Buttercup Powder</h3>
+  <p class="Price">$69.99 TT</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/liquid-velvet-face-canvas.jpg" alt="facespray" style="width: 100%">
+  <h3>Sacha Liquid Face Cancvas</h3>
+  <p class="Price">$50.99 TT</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/blush-palette.jpg" alt="Blush" style="width:100%">
+  <h3>Sacha BLush Palette</h3>
+  <p class="Price">$80.00 TT</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/matte-lipstick.jpg" alt="lipstick" style="width:100%">
+  <h3>Sacha Matte Lipstick</h3>
+  <p class="Price">$49.99 TT</p>
+  <p>Bold and Beautiful Lips.Available in a Variety of Colours.Perfect for All Sepcial Occassions</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/fenty eye.jpg" alt="Mascara" style="width:86%">
+  <h3>Fenty Curl Mascara</h3>
+  <p class="Price">$90.00 TT</p>
+  <p>Available in Black,Blue and Purple. Add Volume, Lift and Curl to your Eyelashes.Waterproof and Lightweight Formula.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/wetblush.jpg" alt="Wet n Wild Blush" style="width:90%">
+  <h3>Wet n Wild Color Icon Blush Powder</h3>
+  <p class="Price">$50.00 TT</p>
+  <p>Hydrating, Radiance, Antioxidant, Softening, Brightening.Perfect for all skin types.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
 
-</button></p>
-</div>
-</div>
 
 <div class="column">
 <div class="card">
-  <img src="Images/ped3.jpg" alt="pedicure" style="width: 100%">
-  <h3>Pedicure</h3>
-  <p style="text-align:left;padding: 2px;">Our pedicures help keep feet looking pretty and have your skin moisturized. In addition, a foot massage helps to relieve tension and stimulate circulation. Pretty and Healthy feet guarantee</p>
-  <a href="spaservices1.html">
-        <button class="btn btn--block card__btn">Visit our page for more info</button>
-      </a>
+  <img src="Images/fentylip.jpg" alt="Lipgloss" style="width:88%">
+  <h3>Fenty Beauty Lip Gloss Bomb</h3>
+  <p class="Price">$90.00 TT</p>
+  <p>Formulated not only to Shine your lips but also Nourish them. Infused with Essential Oils.Available in Different Colours and Flavors</p>
+  <p><button>Add to Cart</button></p>
 </div>
 </div>
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-&nbsp;
-<div class="row">
-<div class="pricelist">
-<img src="Images/pricelist.png" style="width:60%; padding:20px; text-align: center; display: inline-flex;">
-</div>
-
-<div class="video">
-
-  <video width="540" controls>
-   <source src="Images/video.mp4" type="video/mp4" style="height: 100%; width: 100%; text-align: right; display: inline-flex; ">
-    <source src="moive.ogg" type="video/ogg">
-  Your browser does not support HTML video.
-</video>
-
+<div class="column">
+<div class="card">
+  <img src="Images/makeupfenty.jpg."alt="Foundation" style="width:100%">
+  <h3>Fenty Liquid Foundation</h3>
+  <p class="Price">$150.00 TT</p>
+  <p>Pro-Coverage with Matte-Finished.Available in Different Shades for All Skin Tones and Types.Speacially Formulated with Skin Benifits </p>
+  <p><button>Add to Cart</button></p>
 </div>
 </div>
-
-
-
-
-
+<div class="column">
+<div class="card">
+  <img src="Images/fentypowder.jpg."alt="fenty powder" style="width:95%">
+  <h3>Fenty Beauty Pro Filt'r Soft Matte Powder </h3>
+  <p class="Price">$70.00 TT</p>
+  <p>This face powder is the perfect finishing touch to your makeup look. Full Coverage with a Matte-Finished.</p>
+  <p><button>Add to Cart</button></p>
+</div>
+</div>
 
 </body>
 </html>
+

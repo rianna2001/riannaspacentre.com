@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {box-sizing: border-box}
+body {
+  background-color:navajowhite;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #F97B22;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color:yellowgreen;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color:yellowgreen;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.card {
+  max-width: 300px;
+  transition: 0.3s;
+  width: 80%;
+  height: 20%;
+  color:black;
+  background-color: lightpink;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn {
+  background-color: orange;
+  border: 1px solid @gray-light;
+  //border-radius: 1rem;
+  color: @gray-dark;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-color: orange;
+}
+
+.btn--block {
+  display: block;
+  width: 80%;
+  TEX
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#aboutus">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn" class="active">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Beauty</a>
+      <a href="#">Haircare</a>
+      <a href="#">Skincare</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+  <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="makeup.html">Makeup</a>
+      <a href="spa.html"class="active">Spa</a>
+      <a href="salon1.html">Salon</a>
+    </div>
+  </div>
+  <div class="topnav">
+      <a href="contact1.html">Contact Us</a>
+       <img src="https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=" style="width:6%; float: right;">
+           <div class="topnav">
+        <a href="CART.html" style="float: right;">My Cart</a>
+
+   </div>
+ </div>
+</div>
+
+     <img src="Images/spaserban.png" alt="banner"style="width: 100%;">
+  
+<br>
+<br>
+<br>
+
+<div class="column">
+<div class="card">
+  <img src="Images/face.jpg" alt="facials" style="width:100%">
+  <div class="container">
+    <h2 style="text-align:center;"><b><u>Facials</u></b></h2> 
+    <p>Our facials includes a steam, exfoliation (physical and chemical), extraction, creams, lotions, facial masks, peels, and massage. They are normally performed in beauty salons, but are also a common spa treatment.For more info check out our social media pages or Visit us <b>TODAY !!</b> </p>
+        <p> <b>Price Starts as low as $100.00 TT</b></p>
+<p><b>Please book in advance. Click on the button below to book your appointment.</b></p>
+        <a href="https://form.jotform.com/231136123600843" target="blank">
+        <button class="btn btn--block card__btn">BOOK NOW</button>
+      </a>
+</div>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/ped3.jpg" alt="pedicure" style="width:100%">
+  <div class="container">
+    <h2 style="text-align: center;"><b><u>Pedicure</u></b></h2> 
+    <p>Our pedicures servicers will have your foot feeling soft and looking beautiful.A pedicure is a therapeutic treatment for your feet that removes dead skin, softens hard skin and shapes and treats your toenails. visit us  <b>TODAY !!</b></p>
+         <p> <b>Price Starts as low as $100.00 TT</b></p>
+        <p><b>Please book in advance.Click on the button below to book your appointment.</b></p>
+       <a href="https://form.jotform.com/231136123600843" target="blank">
+     <button class="btn btn--block card__btn"> BOOK NOW</button>
+      </a>
+</p> 
+  </div>
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="Images/massage.jpg" alt="massage " style="width:100%">
+  <div class="container">
+    <h2 style="text-align:center;"><b><u>Natural Makeup</u></b></h2> 
+    <p>We offers a wide variety of different massages.One of our most Popular massage is the Shiastsu Massage,which orignates in Japan.For more info check out our social media pages or Visit us <b>TODAY !!</b></p>
+        <p> <b>Price Starts as low as $200.00 TT</b></p>
+        <p><b>Please book in advance.Click on the button below to book your appointment.</b></p>
+        <a href="https://form.jotform.com/231136123600843" target="blank">
+        <button class="btn btn--block card__btn">BOOK NOW</button>
+      </a></p> 
+  </div>
+</div>
+</div>
+
+
+
+</body>
+</html> 

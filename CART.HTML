@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>cart</title>
+<style>
+	
+body{margin-top:20px;
+    background:#eee;
+    color: black;
+    background-color: navajowhite;
+}
+h3 {
+    font-size: 16px;
+}
+.text-navy {
+    color: #1ab394;
+}
+.cart-product-imitation {
+  text-align: center;
+  padding-top: 0px;
+  height: 100px;
+  width: 100px;
+  background-color: #f8f8f9;
+}
+.product-imitation.xl {
+  padding: 120px 0;
+}
+.product-desc {
+  padding: 20px;
+  position: relative;
+}
+.ecommerce .tag-list {
+  padding: 0;
+}
+.ecommerce .fa-star {
+  color: #d1dade;
+}
+.ecommerce .fa-star.active {
+  color: #f8ac59;
+}
+.ecommerce .note-editor {
+  border: 1px solid #e7eaec;
+}
+table.shoping-cart-table {
+  margin-bottom: 0;
+}
+table.shoping-cart-table tr td {
+  border: none;
+  text-align: right;
+}
+table.shoping-cart-table tr td.desc,
+table.shoping-cart-table tr td:first-child {
+  text-align: left;
+}
+table.shoping-cart-table tr td:last-child {
+  width: 80px;
+}
+.ibox {
+  clear: both;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+.ibox.collapsed .ibox-content {
+  display: none;
+}
+.ibox:after,
+.ibox:before {
+  display: table;
+}
+.ibox-title {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #ffffff;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 3px 0 0;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 14px 15px 7px;
+  min-height: 48px;
+}
+.ibox-content {
+  background-color: #ffffff;
+  color: inherit;
+ padding: 15px 20px 20px 20px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0;
+  position: relative;
+}
+.ibox-footer {
+  color: inherit;
+  border-top: 1px solid #e7eaec;
+  font-size: 90%;
+  background: #ffffff;
+  padding: 10px 15px;
+}
+.Quality {
+	float:right;
+	position: absolute;
+	right: 100px;
+}
+.card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  background-color: white;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: calc(100% / 2);
+    background-color: white;
+    padding: 6px;
+    margin: 10px;
+  }
+  .image-wrapper {
+    height: 20vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="container">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <span class="pull-right">(<strong>10</strong>) items</span>
+                    <h5>Items in your cart</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table shoping-cart-table">
+                            <tbody>
+                            <tr>
+                                <td width="90">
+                                    <div class="cart-product-imitation">
+                                    	<img src="Images/wash3.jpg" style="width:100px;">
+                                    </div>
+                                </td>
+                                <td class="desc">
+                                    <h3>
+                                    <a href="#" class="text-navy">
+                                       Dial Body Wash
+                                    </a>
+                                    </h3>
+                        
+                                    <dl class="small m-b-none">
+                                        <dt>700 ml</dt>
+                                       <dl class="small m-b-none"></dl>
+                                        <dt>Skincare Products</dt>
+                                       
+                                    </dl>
+
+                                    <div class="m-t-sm">
+                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i> Add gift package</a>
+                                        |
+                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                    </div>
+                                </td>
+                                              
+
+                                <td width="65">
+                                    <input type="text"  class="form-control"  placeholder=" Quantity              1">
+                                </td>
+                                <td>
+                                    <h4>
+
+                                        $70.00 TT
+                                    </h4>
+                                </td>
+                            
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+               
+
+                </div>
+                 <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table shoping-cart-table">
+
+                            <tbody>
+                            <tr>
+                                <td width="90">
+                                    <div class="cart-product-imitation">
+                                        <img src="Images/skin1.jpg" alt="skin" style="width: 100%;">
+                                    </div>
+                                </td>
+                                <td class="desc">
+                                    <h3>
+                                        <a href="#" class="text-navy">
+                                           CerVa Facial Wash
+                                        </a>
+                                    </h3>
+                                    <p class="small">
+                                        900 ml
+                                    </p>
+                                       <dl class="small m-b-none">
+                                        <dt>Skincare Products</dt>
+                                    </dl>
+                                       
+
+                                    <div class="m-t-sm">
+                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i> Add gift package</a>
+                                        
+                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                    </div>
+                                </td>
+
+                            
+                                <td width="65">
+                                    <input type="text" class="form-control" placeholder=" Quantity          1">
+                                    
+                                </td>
+                                <td>
+                                     <h4>
+
+
+                                        $100.00 TT
+                                    </h4>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table shoping-cart-table">
+
+                            <tbody>
+                            <tr>
+                                <td width="90">
+                                    <div class="cart-product-imitation">
+                                        <img src="Images/hair3.jpg" alt="hair treaatment" style="width:100%">
+                                    </div>
+                                </td>
+                                <td class="desc">
+                                    <h3>
+                                        <a href="#" class="text-navy">
+                                          Cantu Deep Treatment Masque
+                                        </a>
+                                    </h3>
+                                    <p class="small">
+                                        800 ml
+                                    </p>
+                                    <dl class="small m-b-none">
+                                        <dt>Haircare Products</dt>
+                                       
+                                    </dl>
+
+                                    <div class="m-t-sm">
+                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i> Add gift package</a>
+                                        |
+                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                    </div>
+                                </td>
+
+                               
+                                <td width="65">
+                                    <input type="text" class="form-control" placeholder=" Quantity        1">
+                                    
+                                </td>
+                                <td>
+                                    <h4>
+                                     $100.00 TT
+                                    </h4>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table shoping-cart-table">
+
+                            <tbody>
+                            <tr>
+                                <td width="90">
+                                    <div class="cart-product-imitation">
+                                        <img src="Images/sun1.jpg" alt="sunscreen" style="width:100%;">
+                                    </div>
+                                </td>
+                                <td class="desc">
+                                    <h3>
+                                        <a href="#" class="text-navy">
+                                            La Rosche Posay SPF-60
+                                        </a>
+                                    </h3>
+                                    <p class="small">
+                                        150 ml
+                                    </p>
+                                    <dl class="small m-b-none">
+                                        <dt>Skincare Products</dt>
+                                        
+                                    </dl>
+
+                                    <div class="m-t-sm">
+                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i> Add gift package</a>
+                                        |
+                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                    </div>
+                                </td>
+
+                            
+                                <td width="65">
+                                    <input type="text" class="form-control" placeholder=" Quanity            1">
+                                </td>
+                                <td>
+
+                                    <h4>
+                                     $200.00 TT 
+                                    </h4>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table shoping-cart-table">
+
+                            <tbody>
+                            <tr>
+                                <td width="90">
+                                    <div class="cart-product-imitation">
+                                        <img src="Images/con3.jpg" alt="hair conditioner" style="width:100%;">
+                                    </div>
+                                </td>
+                                <td class="desc">
+                                    <h3>
+                                        <a href="#" class="text-navy">
+                                          Garnier Fructis Grow Strong Conditioner
+                                        </a>
+                                    </h3>
+                                    <p class="small">
+                                        300 ml
+                                    </p>
+                                    <dl class="small m-b-none">
+                                        <dt>Haircare Porducts</dt>
+                                      
+                                    </dl>
+                                    <div class="m-t-sm">
+                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i> Add gift package</a>
+                                        |
+                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                    </div>
+                                </td>
+                             
+                                <td width="65">
+                                    <input type="text" class="form-control" placeholder="  Quanity          1">
+                                </td>
+                                <td>
+                                    <h4>
+                                      $90.00 TT
+                                    </h4>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                 <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table shoping-cart-table">
+
+                            <tbody>
+                            <tr>
+                                <td width="90">
+                                    <div class="cart-product-imitation">
+                                        <img src="Images/fentypowder.jpg" alt="fenty powder" style="width:100%;">
+                                    </div>
+                                </td>
+                                <td class="desc">
+                                    <h3>
+                                        <a href="#" class="text-navy">
+                                        Fenty Beauty Pro Filter Soft Matte Powder
+                                        </a>
+                                    </h3>
+                                    <p class="small">
+                                        150 ml
+                                    </p>
+                                    <dl class="small m-b-none">
+                                        <dt> Beauty Products</dt>
+                                        
+                                    </dl>
+
+                                    <div class="m-t-sm">
+                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i> Add gift package</a>
+                                        |
+                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                    </div>
+                                </td>
+
+                            
+                                <td width="65">
+                                    <input type="text" class="form-control" placeholder=" Quanity          1">
+                                </td>
+                                <td>
+                                    <h4>
+                                        $170.00 TT
+                                    </h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+ <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table shoping-cart-table">
+
+                            <tbody>
+                            <tr>
+                                <td width="90">
+                                    <div class="cart-product-imitation">
+                                        <img src="Images/wetblush.jpg" alt="wetnwild blush" style="width:100%;">
+                                    </div>
+                                </td>
+                                <td class="desc">
+                                    <h3>
+                                        <a href="#" class="text-navy">
+                                         Wet n Wild Color Icon Blush Powder
+                                        </a>
+                                    </h3>
+                                    <p class="small">
+                                        150 ml
+                                    </p>
+                                    <dl class="small m-b-none">
+                                        <dt>Beauty Products</dt>
+                                        
+                                    </dl>
+
+                                    <div class="m-t-sm">
+                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i> Add gift package</a>
+                                        |
+                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                    </div>
+                                </td>
+
+                            
+                                <td width="65">
+                                    <input type="text" class="form-control" placeholder=" Quanity           2">
+                                </td>
+                                <td>
+                                    <h4>
+                                        $100.00 TT
+                                    </h4>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+ <div class="ibox-content">
+                    <div class="table-responsive">
+                        <table class="table shoping-cart-table">
+
+                            <tbody>
+                            <tr>
+                                <td width="90">
+                                    <div class="cart-product-imitation">
+                                        <img src="Images/makeup1.jpg" alt="Sacha Powder" style="width:100%;">
+                                    </div>
+                                </td>
+                                <td class="desc">
+                                    <h3>
+                                        <a href="#" class="text-navy">
+                                           Sacha Buttercup Powder
+                                        </a>
+                                    </h3>
+                                    <p class="small">
+                                        150 ml
+                                    </p>
+                                    <dl class="small m-b-none">
+                                        <dt>Beauty Products</dt>
+                                        
+                                    </dl>
+
+                                    <div class="m-t-sm">
+                                        <a href="#" class="text-muted"><i class="fa fa-gift"></i> Add gift package</a>
+                                        |
+                                        <a href="#" class="text-muted"><i class="fa fa-trash"></i> Remove item</a>
+                                    </div>
+                                </td>
+
+                            
+                                <td width="65">
+                                    <input type="text" class="form-control" placeholder=" Quanity          2">
+                                </td>
+                                <td>
+                                    <h4>
+                                        $140.00 TT
+                                    </h4>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+            </div>
+
+        </div>
+          <div class="ibox-content">
+                    <button class="btn btn-primary pull-right"><i class="fa fa fa-shopping-cart"></i><a href="checkout.html"> Checkout
+                     
+</a>
+            </button>
+                    <button class="btn btn-white"><i class="fa fa-arrow-left"></i> Continue shopping</button>
+
+                </div>
+            <div class="col-md-3">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h3>Cart Summary</h3>
+                </div>
+                <div class="ibox-content">
+                    <span>
+                        Total
+                    </span>
+                    <h2 class="font-bold">
+                        $970.00 &nbsp;TT
+                    </h2>
+
+                    <hr>
+                    <span class="text-muted small">
+                        *For United States, France and Germany applicable sales tax will be applied
+                    </span>
+                </div>
+            </div>
+                    
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h3>Support</h3>
+                </div>
+                <div class="ibox-content text-center">
+                    <h3><i class="fa fa-phone"></i> +43 100 783 001</h3>
+                    <span class="small">
+                        Please contact with us if you have any questions. We are avalible 24h.
+                    </span>
+                </div>
+            </div>
+
+            <div class="ibox">
+                <div class="ibox-content">
+
+                    <p class="font-bold"style="text-align: center;">
+                   <b> Other products you may be interested</b>
+                    </p>
+                    <hr>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="Images/shampoo1.jpg" alt="skincare" style="width:90%;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">OGX Thick & FullShampoo</h3>
+            <p class="card-text">
+                <p><b><u> PRICE</u></b> -$76.99 TT</p>
+
+The nutrient-rich,shampoo is infused with ProVitamin B7 biotin & collagen helps give each strand of hair a beautiful boost, leaving your hair feeling thicker & fuller
+              content.</p>
+            <a href="#" class="btn btn-primary">Go  to Haircare Products</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="Images/oil3.jpg" alt="hair oil" style="width:90%;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Pure Body Naturals Pure Argan Oil</h3>
+            <p class="card-text">
+                <p><b><u> PRICE</u></b> -$180.00 TT</p>
+
+Hydrating Serum: This leave in treatment hydrates and nourishes to transform dry, lifeless hair to soft and lustrous.It leaves hair sumptuously soft, lightweight</p>
+            <a href="#" class="btn btn-primary">Go to Haircare Products </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="Images/hair2.jpg" alt="hair treatment" style="width:90%;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Tresemme Keratin Treatment</h3>
+            <p class="card-text">
+                <p><b><u> PRICE</u></b>-$120.00 TT </p>
+
+TRESemmé Keratin Deep Smoothing Mask seals strands to fight against humidity and frizz, leaving your locks silky smooth to take the effort out of styling. </p>
+            <a href="#" class="btn btn-primary">Go to Haircare Products </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="Images/fentylip.jpg" alt="fenty lipgloss" style="width:90%;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Fenty Beauty Lip Gloss Bomb</h3>
+            <p class="card-text">
+                <p><b><u>PRICE</u></b>- $90.00 TT</p>
+            Formulated not only to Shine your lips but also Nourish them. Infused with Essential Oils.Available in Different Colours and Flavors</p>
+            <a href="#" class="btn btn-primary">Go to Beauty Products </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="Images/makeupfenty.jpg" alt="sacha blush" style="width:90%;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Fenty Liquid Foundation</h3>
+            <p class="card-text">
+                <p><b><u> PRICE</u></b>- $150.00 TT</p>
+                Pro-Coverage with Matte-Finished.Available in Different Shades for All Skin Tones and Types.Speacially Formulated with Skin Benifits 
+              </p>
+            <a href="#" class="btn btn-primary">Go to Beauty Produts</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-wrapper">
+            <img src="Images/sun2.jpg" alt="sunscreen" style="width:90%;">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Neutrogena Clear Face Sunscreen</h3>
+            <p class="card-text">
+                <p>$180.00 TT</p>
+
+Dermatologist Recommened. Water Resistant.This product Oil- Free which make it ideal fpr acen pron skin.
+              </p>
+            <a href="#" class="btn btn-primary">Go to Skincare products</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+             
+
+</body>
+</html>
