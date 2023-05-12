@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rianna Spa and Salon Centre</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+* {box-sizing: border-box}
+body {
+  background-color: navajowhite;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #F97B22;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color:yellowgreen;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: darkred;
+  padding: 5px;
+}
+.centered {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  padding: 20px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 25px;
+  color: black;
+  background-color: orange;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.pricelist {
+  position: relative;
+  float: left;
+}
+.video{
+  position: relative;
+  float: right;
+  margin: auto 0px;
+  display: inline-block;
+
+
+}
+
+}
+
+</style>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="#home" class="active" >Home</a>
+  <a href="about us.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Products
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="beautyproducts.html"class="active">Beauty</a>
+      <a href="hairproducts.html">Haircare</a>
+      <a href="skinproducts.html">Skincare</a>
+    </div>
+  </div> 
+    <div class="dropdown">
+  <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="makeupservices.html">Makeup</a>
+      <a href="spa.html">Spa</a>
+      <a href="salonservices.html">Salon</a>
+    </div>
+  </div>
+  <div class="topnav">
+      <a href="contact1.html">Contact Us</a>
+
+    
+    
+          <img src="https://media.istockphoto.com/id/1206806317/vector/shopping-cart-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=1RRQJs5NDhcB67necQn1WCpJX2YMfWZ4rYi1DFKlkNA=" style="width:6%; float: right;">
+           <div class="topnav">
+        <a href="CART.html" style="float: right;">My Cart</a>
+
+</div>
+</div>
+</div>
+<div class="container">
+ <img src="Images/homebann.png" alt="banner"  style="width:100%; height:100%;">
+</div>
+
+
+<br>
+<br>
+<br>
+<h1 style="text-align:center;color: yellowgreen;"><b><u>Our Most Requested Services</u></b></h1>
+<div class="column">
+<div class="card">
+  <img src="Images/homemakeup.jpg" alt="makeuplook" style="width: 100%">
+  <br>
+  <h3>Makeup </h3>
+  <p style="text-align:left; padding: 2px;">One of our most Popular Services at Rianna Spa and Salon is our Makeup Services. Our Beauty Practitioners are some of the best in the Industry with years of experiences.Satifisation Guarantee!</p>
+  <a href="makeup.html">
+        <button class="btn btn--block card__btn">Visit our page for more info</button>
+      </a>
+
+</button></p>
+</div>
+</div>
+
+<div class="column">
+<div class="card">
+  <img src="Images/ped3.jpg" alt="pedicure" style="width: 100%">
+  <h3>Pedicure</h3>
+  <p style="text-align:left;padding: 2px;">Our pedicures help keep feet looking pretty and have your skin moisturized. In addition, a foot massage helps to relieve tension and stimulate circulation. Pretty and Healthy feet guarantee</p>
+  <a href="spaservices1.html">
+        <button class="btn btn--block card__btn">Visit our page for more info</button>
+      </a>
+</div>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+&nbsp;
+<div class="row">
+<div class="pricelist">
+<img src="Images/pricelist.png" style="width:60%; padding:20px; text-align: center; display: inline-flex;">
+</div>
+
+<div class="video">
+
+  <video width="540" controls>
+   <source src="Images/video.mp4" type="video/mp4" style="height: 100%; width: 100%; text-align: right; display: inline-flex; ">
+    <source src="moive.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
